@@ -1,10 +1,11 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../models/product_model.dart';
-import '../providers/products_provider.dart';
-import '../widgets/product_item_widget.dart';
 import '../widgets/product_grid_widget.dart';
+import '../widgets/badge_widget.dart';
+import '../providers/cart.dart';
 
 enum FilterOptions {
   Favourites,
@@ -12,7 +13,7 @@ enum FilterOptions {
 }
 
 class ProductOverviewScreen extends StatefulWidget {
-  ProductOverviewScreen({Key key}) : super(key: key);
+  const ProductOverviewScreen({Key key}) : super(key: key);
 
   @override
   State<ProductOverviewScreen> createState() => _ProductOverviewScreenState();
@@ -29,6 +30,16 @@ class _ProductOverviewScreenState extends State<ProductOverviewScreen> {
         centerTitle: true,
         title: const Text('MyShop'),
         actions: [
+          Consumer<Cart>(
+            builder: (_, cart, ch) => BadgeWidget(
+              value: cart.itemCount.toString(),
+              child: ch,
+            ),
+            child: IconButton(
+              icon: const Icon(Icons.shopping_cart),
+              onPressed: () {},
+            ),
+          ),
           PopupMenuButton(
             onSelected: (FilterOptions selectedValue) {
               setState(() {
@@ -39,15 +50,15 @@ class _ProductOverviewScreenState extends State<ProductOverviewScreen> {
                 }
               });
             },
-            icon: Icon(Icons.more_vert),
+            icon: const Icon(Icons.more_vert),
             itemBuilder: (_) => [
-              PopupMenuItem(
-                child: Text('Only Favourite'),
+              const PopupMenuItem(
                 value: FilterOptions.Favourites,
+                child: Text('Only Favourite'),
               ),
-              PopupMenuItem(
-                child: Text('Show All'),
+              const PopupMenuItem(
                 value: FilterOptions.All,
+                child: Text('Show All'),
               ),
             ],
           ),

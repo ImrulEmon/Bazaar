@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../models/product_model.dart';
 import './product_item_widget.dart';
 import '../providers/products_provider.dart';
 
@@ -14,7 +13,7 @@ class ProductsGridWidget extends StatelessWidget {
 
   final bool showFavs;
 
-  ProductsGridWidget(this.showFavs);
+  const ProductsGridWidget(this.showFavs, {Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +33,7 @@ class ProductsGridWidget extends StatelessWidget {
       itemBuilder: (ctx, i) => ChangeNotifierProvider.value(
         // create: (c) => products[i],
         value: products[i],
-        child: ProductItemWidget(
+        child: const ProductItemWidget(
             // id: products[i].id,
             // title: products[i].title,
             // imageUrl: products[i].imageUrl,
