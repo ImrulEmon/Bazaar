@@ -1,16 +1,22 @@
-# bazaar
+# `Bazaar`
+ 
+### `State-Management`
 
-A new Flutter project.
+<p align="center">
+<img alt='Home' src='https://github.com/ImrulEmon/Bazaar/blob/main/OUTPUT/Home.png' width='30%'>
 
-## Getting Started
+<img alt='Home menu' src='https://github.com/ImrulEmon/Bazaar/blob/main/OUTPUT/Home-menu.png' width='30%'>
 
-This project is a starting point for a Flutter application.
+<img alt='Home fav' src='https://github.com/ImrulEmon/Bazaar/blob/main/OUTPUT/Home-fav.png' width='30%'>
 
-A few resources to get you started if this is your first Flutter project:
+<img alt='Home all' src='https://github.com/ImrulEmon/Bazaar/blob/main/OUTPUT/Home-All.png' width='30%'>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<img alt='Details' src='https://github.com/ImrulEmon/Bazaar/blob/main/OUTPUT/Details.png' width='30%'>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img alt='Cart' src='https://github.com/ImrulEmon/Bazaar/blob/main/OUTPUT/Cart.png' width='30%'>
+
+<img alt='Cart-dlt' src='https://github.com/ImrulEmon/Bazaar/blob/main/OUTPUT/Cart-dlt.png' width='30%'>
+
+<img alt='Cart-dlt-2' src='https://github.com/ImrulEmon/Bazaar/blob/main/OUTPUT/Cart-dlt-2.png' width='30%'>
+
+</p>
