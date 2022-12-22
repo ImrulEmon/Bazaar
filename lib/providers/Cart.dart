@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, avoid_types_as_parameter_names, non_constant_identifier_names
+
 import 'package:flutter/foundation.dart';
 
 class CartItem {
@@ -15,7 +17,7 @@ class CartItem {
 }
 
 class Cart with ChangeNotifier {
-  Map<String, CartItem> _items = {};
+  final Map<String, CartItem> _items = {};
 
   Map<String, CartItem> get items {
     return {..._items};
